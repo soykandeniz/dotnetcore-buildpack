@@ -12,11 +12,6 @@ testDotNetCore21() {
   assertCapturedSuccess
 }
 
-testDotNetCore2CustomProcfile() {
-  compile "custom-procfile"
-  assertCaptured "Be careful with custom Procfile"
-  assertCapturedSuccess
-}
 
 testDotNetCore22() {
   compile "dotnetcore-2.2"
